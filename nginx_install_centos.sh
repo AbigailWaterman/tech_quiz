@@ -2,8 +2,8 @@
 #title           :nginx_install_centOS.sh
 #description     :This script will install NginX on an install of CentOS version 6.
 #author          :Abigail Waterman
-#date            :06/14/2014
-#version         :0.2
+#date            :06/18/2014
+#version         :0.3
 #usage           :bash nginx_install_centOS.sh OR ./nginx_install_centOS.sh
 #logging	 :./nginx_install_centOS.log
 #==============================================================================
