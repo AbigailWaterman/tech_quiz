@@ -1,0 +1,21 @@
+#title           :README for NWEA Scripting Exercise
+#author          :Abigail Waterman
+#date            :06/18/2014
+#==============================================================================
+
+1.	I’ve included the script in the file Nginx_Script_Abigail_Waterman.zip
+2.	The script is named nginx_install_centos.sh
+3.	A README file is included in the archive that contains installation instructions.
+4.	The script should be run as root or with sudo privileges as:
+	a.	‘sudo ./nginx_install_centos.sh’ 
+	b.	or as root: ./nginx_install_centos.sh
+5.	A log will be output to /tmp/nginx_install_centos.log
+6.	Additional documentation is available in the script itself.
+
+I.	I chose this solution based on my knowledge of Linux and scripting. I chose to use BASH because it is universally available, and most Linux users are aware of how to use it. I wrote and tested the script on a CentOS 6.3 image that is running in VMWare Fusion 5.03. The script is set to abort if it is run in a flavor of Linux that is different than CentOS. I could have made it more universal, but from my experience, most web server clusters run identical installations of Linux. It can be modified to run in RedHat or Fedora quite easily if needed.
+
+II.	There were limitations to my choice in that I assumed that the installation of CentOS was standard with all installation tools included. I chose to use ‘Yum’ to install the package because of the ubiquity of this tool in RedHat based installs of Linux. However, the script could be modified quite easily to do a manual install using ‘make’.  
+
+III.	The script outputs all direct out information to a log file that will be found in ‘/tmp/nginx’ after the completion of the installation. If this script was to be used in a production environment more regularly, the logging would probably made to be more verbose to aid in problem debugging. However, I felt that the amount of logging used at present was sufficient for now.
+
+IV.	Using scripting tools to automate this task is important because often a production environment will utilize tens if not hundreds of servers to handle its user base. In a virtualized environment, as is increasingly becoming standard, servers tend to be small to maximize resources. Therefore, if this task were to be done manually, the time difference between the automated approach and the manual approach would be exponential. I have learned from experience both how much time can be saved using this approach. Also, one of the key sources of errors is manual human tasks. Automating these tasks reduces human error and increases reliability.
