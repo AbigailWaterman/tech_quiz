@@ -16,7 +16,6 @@ LOGFILE="$NGINX_Directory/nginx_install_centOS.log"
 rm -Rf $LOGFILE
 	log(){
     message="$@"
-    echo $message
     echo $message >>$LOGFILE
 }
 
